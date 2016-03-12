@@ -1,0 +1,29 @@
+{
+	"products":[
+		{
+			"description": "Bracket",
+			"size": "n\/a",
+			"price": "$2.80"
+		},
+		{
+			"description": "Trex",
+			"size": "2x6x16'",
+			"price": "$2.31"
+		},
+		{
+			"description": "Trex",
+			"size": "2x6x12'",
+			"price": "$1.44
+		},
+		{
+			"description": "Fir",
+			"size": "2x6x10'",
+			"price": "$1.44
+		},
+		{
+			"description": "Fir",
+			"size": "2x6x8'",
+			"price": "$1.43
+		}
+	]
+}
