@@ -1,2 +1,2 @@
-table td {
-  background-color: pink; }
+table tr th {
+  cursor: pointer; }

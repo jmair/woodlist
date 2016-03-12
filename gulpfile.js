@@ -9,7 +9,7 @@ var gulp = require('gulp'),
 gulp.task('haml', function() {
 	gulp.src('./haml/**/*.haml')
 		.pipe(haml())
-		.pipe(gulp.dest('./html'));
+		.pipe(gulp.dest('./'));
 });
 
 gulp.task('sass', function() {

@@ -13,6 +13,7 @@
   "author": "Jerimiah Mair",
   "license": "ISC",
   "devDependencies": {
+    "gulp": "^3.9.1",
     "gulp-haml": "^0.1.6",
     "gulp-sass": "^2.2.0",
     "gulp-watch": "^4.3.5"

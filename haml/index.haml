@@ -5,19 +5,23 @@
     %script(src="https://code.jquery.com/jquery-1.12.1.min.js")
     %script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js")
     %script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-resource.min.js")
-    %script(src="../js/app.js")
-    %link{rel: "stylesheet", href: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"}
+    %script(src="js/app.js")
+    %link{ rel: "stylesheet", href: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" }
+    %link{ rel: "stylesheet", href: "css/default.css" }
     %script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js")
   %body.container
     %div{class: "row", ng-controller: "listController as listCtrl"}
-      %table.table
+      %table.table.table-striped.table-hover.table-bordered
         %thead
           %tr
-            %th{ng-click: "listCtrl.sortBy = '-description'"} Descriptions 
-            %th{ng-click: "listCtrl.sortBy = 'size'"} Size
-            %th{ng-click: "listCtrl.sortBy = 'price'"} Price/lf
-          %tr{ng-repeat: "product in listCtrl.products|orderBy:listCtrl.sortBy"}
+            %th{ng-click: "listCtrl.sortByColumn('description')"} Descriptions 
+            %th{ng-click: "listCtrl.sortByColumn('size')"} Size
+            %th{ng-click: "listCtrl.sortByColumn('price')"} Price/lf
+            %th Price/board
+         %tbody
+          %tr{ng-repeat: "product in listCtrl.products|orderBy:listCtrl.sorter"}
             %td {{ product.description }}
             %td {{ product.size }}
             %td {{ product.price/product.length|currency }}
+            %td {{ product.price|currency }}
 
