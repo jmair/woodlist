@@ -432,6 +432,24 @@ angular.module('woodlist', [])
 			"size": "2x6x7'",
 			"length": 7,
 			"price": 3.36
+		},
+		{
+			"description": "Fir",
+			"size": "2x2x8'",
+			"length": 8,
+			"price": 3.97
+		},
+		{
+			"description": "Cedar",
+			"size": "2x4x8'",
+			"length": 8,
+			"price": 7.98
+		},
+		{
+			"description": "Fir",
+			"size": "2x4x8'price guess",
+			"length": 8,
+			"price": 3.50
 		}
 	];
 });
